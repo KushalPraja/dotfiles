@@ -3,7 +3,7 @@
 
 my dotfiles setup for linux and wsl.
 
-## essentials
+### essentials
 - git
 - tmux
 - neovim
@@ -11,7 +11,7 @@ my dotfiles setup for linux and wsl.
 - fd-find 
 - xclip (if u want share clipboard in wsl)
 
-## installing
+### installing
 
 ```bash
 git clone https://github.com/kushp/dotfiles ~/dotfiles
@@ -24,7 +24,7 @@ cd ~/dotfiles
 ./install.sh
 ```
 
-## what it does
+### what it does
 
 script will install the dotfiles and create a backup of the existing dotfiles.
 it will also create a symlink to their resective locations.
@@ -38,7 +38,7 @@ The current config will also pre-install the language servers for the following 
 - tsls (typescript)
 
 
-# additional notes for nvim
+### additional notes for nvim
 
 if you want to use the language servers, install:
 - unzip
@@ -49,7 +49,7 @@ if you want to use the language servers, install:
 - the current bashrc file has a hardcoded path to the vscode since I am using wsl with no windows path appended (interop).
 - it also includes hard coded path to neovim since I built it from source.
 
-# possible updates...
+### possible updates...
 - I might change shell to zsh since oh-my-zsh has great plugins and its faster
 - I might update the tmux config since its pretty default for now
 
