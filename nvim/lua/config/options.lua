@@ -1,14 +1,14 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.o.number = true         -- Line numbers
+vim.o.number = true -- Line numbers
 vim.o.relativenumber = true
-vim.o.mouse = 'a'           -- Enable mouse mode
+vim.o.mouse = "a" -- Enable mouse mode
 vim.o.showmode = false
 
 -- Sync clipboard between OS and Neovim
 vim.schedule(function()
-  vim.o.clipboard = 'unnamedplus'
+	vim.o.clipboard = "unnamedplus"
 end)
 
 -- Tab settings
@@ -26,7 +26,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 vim.o.updatetime = 250
 
 -- Decrease mapped sequence wait time
@@ -36,7 +36,12 @@ vim.o.timeoutlen = 300
 -- Configure how new splits should be opened
 vim.o.splitright = true
 vim.o.splitbelow = true
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 vim.o.cursorline = true -- Highlight current linej
 vim.o.scrolloff = 10
-vim.o.confirm = true    -- Ask for confirmation when closing unsaved files
+vim.o.confirm = true -- Ask for confirmation when closing unsaved files
+
+if vim.g.neovide then
+	vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+	vim.g.neovide_refresh_rate = 60
+end
