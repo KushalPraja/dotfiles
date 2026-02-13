@@ -23,7 +23,7 @@ require("lazy").setup({
 	{ import = "plugins.neo-tree" },
 	{ import = "plugins.nvim-ts-autotag" },
 	{ import = "plugins.supermaven" },
-	-- { import = "plugins.noice" },
+	{ import = "plugins.noice" },
 	{ import = "plugins.lualine" },
 	{ import = "plugins.colorscheme" },
 	{ import = "plugins.gitsigns" },

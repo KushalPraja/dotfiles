@@ -41,6 +41,13 @@ vim.o.cursorline = true -- Highlight current linej
 vim.o.scrolloff = 10
 vim.o.confirm = true -- Ask for confirmation when closing unsaved files
 
+-- if windows use powershell
+--
+--
+if vim.fn.has("win32") == 1 then
+	vim.o.shell = "powershell"
+end
+
 if vim.g.neovide then
 	vim.o.guifont = "JetBrainsMono Nerd Font:h13"
 	vim.g.neovide_refresh_rate = 60
