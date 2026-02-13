@@ -37,7 +37,7 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.inccommand = "split"
-vim.o.cursorline = true -- Highlight current linej
+vim.o.cursorline = true -- Highlight current line
 vim.o.scrolloff = 10
 vim.o.confirm = true -- Ask for confirmation when closing unsaved files
 
@@ -49,6 +49,6 @@ if vim.fn.has("win32") == 1 then
 end
 
 if vim.g.neovide then
-	vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+	vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 	vim.g.neovide_refresh_rate = 60
 end
