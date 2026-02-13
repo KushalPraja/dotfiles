@@ -1,6 +1,3 @@
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="/mnt/c/Users/kushp/AppData/Local/Programs/Microsoft VS Code/bin:$PATH"
-# If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
@@ -108,3 +105,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # opencode
 export PATH=/home/kushal/.opencode/bin:$PATH
+# nvim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+# vscode (hard coded since we have dont have a shared path between wsl and windows)
+export PATH="/mnt/c/Users/kushp/AppData/Local/Programs/Microsoft VS Code/bin:$PATH"

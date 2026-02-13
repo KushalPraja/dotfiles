@@ -1,6 +1,6 @@
 # Kushal's Neovim Config
 
-This is a fork of [folke/kickstart.nvim](https://github.com/folke/kickstart.nvim) with some extra plugins and customizationsto be more fit for cpp development.
+This is my personal [[Neovim](https://neovim.io/)] configuration.
 
 ## Quick Install
 
@@ -12,7 +12,8 @@ NOTE: The neovim version in apt is old so you need to compile it from source.
 2. **Clone my config:**
 
    ```sh
-   git clone https://github.com/kushp/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+   git clone https://github.com/kushp/kickstart.nvim.git ~/.config/nvim
+   ```
 
 ## Plugins
 
@@ -41,6 +42,39 @@ NOTE: The neovim version in apt is old so you need to compile it from source.
   sudo apt install neovim git ripgrep fd-find make gcc unzip xclip
   ```
 
----
+- **Windows:**
+  I would recommend using either [Scoop](https://scoop.sh/) or [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-Happy hacking! 🚀
+  Scoop:
+    ```
+    scoop install main/neovim
+    scoop install main/git
+    scoop install main/ripgrep
+    scoop install main/fd
+    scoop install main/gcc
+    scoop install main/7zip
+    scoop install main/nodejs
+    scoop install main/python
+    scoop install main/tree-sitter
+
+    // my personal packages that I use for development
+    scoop install main/fzf
+    scoop install main/zoxide
+    scoop install extras/neovide
+    scoop install main/gh
+    scoop install main/ninja
+    scoop install main/cmake
+    ```
+
+  WSL:
+  ```
+  sudo apt update
+  sudo apt install neovim git ripgrep fd-find make gcc unzip xclip
+  ```
+
+## Credits
+
+- This config is heavily inspired by [folke/dotfiles](https://github.com/folke/dotfiles.nvim)
+- The [Nerd Font](https://www.nerdfonts.com/) is used for icons.
+
+--- 
