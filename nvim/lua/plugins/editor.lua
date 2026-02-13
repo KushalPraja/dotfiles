@@ -1,5 +1,4 @@
 -- Editor enhancement plugins
-
 return {
 	{ -- Autoformat
 		"stevearc/conform.nvim",
