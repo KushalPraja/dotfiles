@@ -56,5 +56,5 @@ local function toggle_terminal()
 	end
 end
 
-vim.keymap.set("n", "<leader>j", toggle_terminal, { desc = "Toggle terminal" })
-vim.keymap.set("t", "<leader>j", toggle_terminal, { desc = "Toggle terminal" })
+vim.keymap.set("n", "<C-j>", toggle_terminal, { desc = "Toggle terminal" })
+vim.keymap.set("t", "<C-j>", toggle_terminal, { desc = "Toggle terminal" })
