@@ -1,7 +1,7 @@
 # .dotfiles
 ---
 
-my dotfiles setup for linux and wsl.
+my dotfiles setup for linux, windows, and wsl.
 
 ### essentials
 - git
@@ -48,6 +48,35 @@ if you want to use the language servers, install:
 
 - the current bashrc file has a hardcoded path to the vscode since I am using wsl with no windows path appended (interop).
 - it also includes hard coded path to neovim since I built it from source.
+
+
+ ### My Windows Setup For Development:
+  I would recommend using either [Scoop](https://scoop.sh/) or [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+
+  Scoop:
+  ```
+  scoop install main/neovim
+  scoop install main/git
+  scoop install main/ripgrep
+  scoop install main/fd
+  scoop install main/gcc
+  scoop install main/7zip
+  scoop install main/nodejs
+  scoop install main/python
+  scoop install main/tree-sitter
+  scoop install main/fzf
+  scoop install main/zoxide
+  scoop install extras/neovide
+  scoop install main/gh
+  scoop install main/ninja
+  scoop install main/cmake
+  ```
+
+  WSL:
+  ```
+  sudo apt update
+  sudo apt install neovim git ripgrep fd-find make gcc unzip xclip
+  ```
 
 ### possible updates...
 - I might change shell to zsh since oh-my-zsh has great plugins and its faster
