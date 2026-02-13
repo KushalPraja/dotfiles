@@ -1,4 +1,3 @@
-
 # directories
 $DOTFILES = "$HOME\dotfiles"
 $BACKUP = "$HOME\.dotfiles-backup\$(Get-Date -Format 'yyyyMMdd-HHmmss')"
@@ -49,5 +48,5 @@ if (-not (Test-Path (Split-Path -Parent $configDir))) {
 New-Link -Source "$DOTFILES\nvim" -Destination $configDir
 
 # finish
-Write-Host "[X] nvim dotfiles installed"
-Write-Host "[X] backups in $BACKUP"
+Write-Host "nvim dotfiles successfully installed"
+Write-Host "backups in $BACKUP"

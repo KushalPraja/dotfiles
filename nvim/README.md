@@ -4,7 +4,6 @@ This is a fork of [folke/kickstart.nvim](https://github.com/folke/kickstart.nvim
 
 ## Quick Install
 
-
 NOTE: The neovim version in apt is old so you need to compile it from source.
 
 1. **Dependencies:**  
